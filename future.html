@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sydney Peterson">
+    <title>Future Work</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><img src="img/icons8-epic-games-50.png" alt="Epic Games Logo"></li>
+      <li><a href="index.html">Taxonomy</a></li>
+      <li><a href="#">Future Work</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="taxonomyhelp.html">Help</a></li>
+    </ul>
+  </nav>
+  <h1>Future Work</h1>
+  <main>
+    <section>
+      <p>
+        This tool was developed as a rudimentary implementation of a taxonomy and
+        the governance plan. It was developed to help visualize the governance and
+        taxonomy development process. With further time and development, it could prove
+        valuable in managing the taxonomy as it scales. It has the potential to automate
+        processes and bring together useful information.
+      </p>
+      <p>
+        The tool’s current capabilities include adding, searching, and deleting tags
+        from a locally stored list. To be an effective collaboration tool, it would
+        need the backing of a database such as AWS’s DynamoDB or SQL Server. The
+        implementation of the retrieval/modification (CRUD) logic would need to be
+        moved to a backend API. Additionally, import/export could be added in common
+        CSV or Excel formats.
+      </p>
+      <p>
+        A potential capstone project for next year would be to find a team to design,
+        develop, and implement a tool that would work with the team's needs and interests.
+        This tool was developed in a limited time frame and was an extension to the project’s
+        original scope. Below is a list of extensions to add given additional investment in this tool.
+      </p>
+      <ul>
+        <li>Move tag data to a central cloud data table. (e.g. AWS DynamoDB, AWS Aurora)</li>
+        <li>Move CRUD logic to backend APIs. (e.g. AWS API Gateway with AWS Lambda or AWS EC2)</li>
+        <li>Incorporate a secure sign-in process so only intended users gain access. (e.g. AWS Incognito)</li>
+        <li>Incorporate User/Group policies and protect certain operations like add/delete tags to admins. (e.g. AWS IAM)</li>
+        <li>Add more robust validations prior to adding tags to the list.</li>
+        <li>Add a review page, where a team member can approve/decline new tags prior to pushing them to production.</li>
+        <li>Expand the table layout to include additional taxonomy column fields.
+            <li>Allow users to show/hide fields of interest.</li>
+        </li>
+        <li>Enable the ability to modify tag entries already in the table.</li>
+        <li>For large tables, add a pagination scheme instead of infinitely appending to a single page.</li>
+        <li>Improve the search functionality by making it more scalable to large datasets.</li>
+        <li>Include filters for tag attributes that span multiple entries.</li>
+      </ul>
+    </section>
+  </main>
+    <footer>
+      <cite><a target="_blank" href="https://icons8.com/icon/44492/epic-games">Epic Games</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></cite>
+      <cite>Site Admin: <a href="mailto: stirling858@gmail.com">Sydney Peterson</a></cite>
+    </footer>
+</body>
+</html>

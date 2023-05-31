@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sydney Peterson">
+    <title>Modification Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="addition.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><img src="img/icons8-epic-games-50.png" alt="Epic Games Logo"></li>
+      <li><a href="index.html">Taxonomy</a></li>
+      <li><a href="future.html">Future Work</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="taxonomyhelp.html">Help</a></li>
+    </ul>
+  </nav>
+  <h1>Modification Page</h1>
+  <main>
+    <section>
+      <button><a href="index.html">Back</a></button>
+      <form id="term-recommendation">
+        <label for="tag">Term (Required):</label><br>
+        <input type="text" id="tag" name="tag" required>
+      </form>
+      <div id="hidden">
+        <p>Validation Requirements</p>
+        <p id="capital">Term is lower case</p>
+        <p id="singular">Term is singular</p>
+        <p id="exists">Term has two or more letters</p>
+      </div>
+      <form id="term-definition">
+        <label for="definition">Definition (Required):</label><br>
+        <textarea id="definition" name="definition" rows="4" cols="50" wrap="soft" required></textarea>
+      </form>
+      <form id="term-scope-note">
+        <label for="scope-note">Scope Note:</label><br>
+        <textarea id="scope-note" name="scope-note" rows="4" cols="50" wrap="soft"></textarea>
+      </form>
+      <button onclick="validateTag();"><a href="#">Submit</a></button>
+      <button onclick="resetList()"><a href="#">Reset</a></button>
+    </section>
+  </main>
+    <footer>
+      <cite><a target="_blank" href="https://icons8.com/icon/44492/epic-games">Epic Games</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></cite>
+      <cite>Site Admin: <a href="mailto: stirling858@gmail.com">Sydney Peterson</a></cite>
+    </footer>
+</body>
+</html>
